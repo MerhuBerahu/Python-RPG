@@ -1,0 +1,30 @@
+todo:
+
+
+### - - COMBAT.PY - - ###
+    • Add in checks 
+        • check CLOCK.PY
+            ○ Add in checks for spelllist/abilities
+                § Buffs
+                § De-buffs
+                § Healing
+                § Damage
+                § Damage Type
+                § Damage Modifier
+
+    • Add in Loot drops 
+        • Add dropped loot to items.db
+
+
+
+### - - JOBS.PY - - ###
+    • Add in Some other Jobs 
+        • add in abilities
+            ○ Add in checks for spelllist/abilities
+                § Buffs
+                § De-buffs
+
+    
+
+
+
