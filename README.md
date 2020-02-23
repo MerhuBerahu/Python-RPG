@@ -39,7 +39,7 @@ Google thus far
 
 * **MerhuBerahu** - *Initial work* - [GitHub](https://github.com/MerhuBerahu)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/MerhuBerahu/Python-RPG/graphs/contributors) who participated in this project.
 
 ## License
 
