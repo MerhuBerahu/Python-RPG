@@ -4,6 +4,9 @@ from items import items
 from races import *
 from beings import *
 
+'''TODO
+*SORT SQLITE3 QUERIES
+'''
 
 conn = sqlite3.connect('RPG.db')
 
