@@ -59,7 +59,7 @@ def NPC_weapons(race, job, level):
     cur.execute('SELECT * FROM weapons WHERE weapon_race =? AND  weapon_job =?', (race,(job)),) 
     for row in cur:
         print("Weapon from DB is: ",row)
-        weapon = row
+        weapon = cur.fetchall()
         weapon = random.choice(weapon)
         print("Weapon is: ",weapon)
 

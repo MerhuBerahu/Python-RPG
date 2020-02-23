@@ -234,11 +234,11 @@ def battle(enemy):
 
 #Enemy - race, name, level, mainjob, support job, gold, inventory
 #battle(Enemy(goblin,"Crikz", 10,white_mage, black_mage,52,inventory = mob_inventory(race,Enemy.level,Enemy.mainjob)))
-x = Enemy(goblin,goblin['race_name'],race_name_random(goblin),5,white_mage,black_mage,52,inventory = mob_inventory(goblin['race_name']))
-print(x.name)
-print(x.inventory)
+#x = Enemy(goblin,goblin['race_name'],race_name_random(goblin),5,white_mage,black_mage,52,inventory = mob_inventory(goblin['race_name']))
+#print(x.name)
+#print(x.inventory)
 
-#battle(Enemy(dwarf,"Orc", 25,warrior, "Warrior",52,inventory = [('Matted Fur',70),('High Quality Fur',10)]))
+battle(Enemy(dwarf,'M',"Orc", 'Crikz', 25,warrior, black_mage,52,inventory = [('Matted Fur',70),('High Quality Fur',10)]))
 
 
 

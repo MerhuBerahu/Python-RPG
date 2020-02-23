@@ -41,6 +41,19 @@ def race_selection():
         print("invalid selection")
         race_selection()
     return race
+
+def sex_selection():
+    print("What sex are you?")
+    print("1. - Male")
+    print("2. - Femail")
+    sex_input = input()
+    if sex_input == "1":
+        sex = 'M'
+        print("you have chosen to be a Male")
+    elif sex_input == "2":
+        sex= 'F'
+        print("you have chosen to be a Female")
+    return sex
     
 def job_selection():
     print("So what was your choice?")
@@ -117,6 +130,7 @@ def choose_job():
 name = choose_name()  
 choose_race()
 race = race_selection()
+sex = sex_selection()
 choose_job()
 job = job_selection()
 supportjob = supportjob_selection()
@@ -124,7 +138,7 @@ inventory = item_by_owned(1)
 
 
 #race,name,level,mainjob,supportjob,gold,inventory,current exp, exp tnl
-player = Player(race,name, 1, job, supportjob,20,inventory,0,100) 
+player = Player(race,sex, name, 1, job, supportjob,20,inventory,0,100) 
 
 
 """ print(player.name,race['name'],job['name'])
