@@ -17,12 +17,14 @@ cur = conn.cursor()
 
 
 def create_enemy(race,sex,level,job):
+    inventory = None
     #read in race, level and job
     #create inventory and equipped gear
     name = NPC_random_name(race,sex)
-    #armour = NPC_armour(race,job,level)
+    inventory = NPC_armour(race,job,level)
     #weapons = NPC_weapons
     #items = NPC_items
+    return inventory
 
 
 ### - Random NPC Names dependant on race and sex - ###
@@ -42,21 +44,26 @@ def NPC_random_name(race, sex):
 
 ### - Get armour set from sqlite3 valid for enemy race, job and level - ###
 def NPC_armour(race, job, level): 
-    print(race)
+    print("race is", race)
     cur.execute('SELECT * FROM armour WHERE armour_race =?''AND  armour_level = 3', (race,),) 
     for row in cur:
-        print(row)
-        inventory = random.choice(row)
+        print("Armour from DB is: ",row)
+        inventory = row
+        print("inventory is: ",inventory)
     return inventory
 
 ### - Get weapon from sqlite3 valid for enemy race, job and level - ###
 def NPC_weapons(race, job, level):
-    print(race)
-    cur.execute('SELECT * FROM items WHERE item_race =?''AND  item_weight < 14', (race,),) 
+    print("race is", race)
+    weapon = None
+    cur.execute('SELECT * FROM weapons WHERE weapon_race =? AND  weapon_job =?', (race,(job)),) 
     for row in cur:
-        print(row)
-        weapon = random.choice(row)
-    return cur.fetchall()
+        print("Weapon from DB is: ",row)
+        weapon = row
+        weapon = random.choice(weapon)
+        print("Weapon is: ",weapon)
+
+    return weapon
 
 ### - Get armour set from sqlite3 valid for enemy race, job and level - ###
 def NPC_items(race, job, level):
@@ -74,8 +81,9 @@ def NPC_items(race, job, level):
         print(row)
     return cur.fetchall() """
 
-print(NPC_random_name(goblin['race_name'], 'M'))
-print(NPC_armour(goblin['race_name'],'warrior',3)) # works needs to not manually input
-#y = Enemy(goblin,'M',goblin['race_name'],NPC_random_name(goblin['race_name'], 'M'),6,warrior,monk,52,create_enemy(goblin,'M',5,white_mage))
-#print(y.name)
-#print(y.inventory)
+#print(NPC_random_name(goblin, 'M'))
+print(NPC_weapons(goblin['race_name'],'warrior',3)) # works needs to not manually input
+y = Enemy(goblin,'M',goblin['race_name'],NPC_random_name(goblin, 'M'),6,warrior,monk,52,inventory = create_enemy(goblin['race_name'],'M',5,warrior["name"]))
+print("y is: ", y)
+print("y name is: ",y.name,y.sex,y.gold,y.mainjob["name"],y.supportjob["name"])
+print("y inventory is: ",y.inventory)

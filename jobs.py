@@ -68,6 +68,8 @@ unlockedJobs = [
     [monk,'0','15' ,'85']
     ]
 
+### - Testing - ###
+
 '''
 print(white_mage['abilities'].keys())
 #print(white_mage['spelllist']['cure']['mp_cost'])
