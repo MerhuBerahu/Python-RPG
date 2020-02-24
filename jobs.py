@@ -16,32 +16,32 @@ white_mage = {'name': 'White Mage', 'description': 'Healer','hp':7 ,'mp':8 ,'spe
 'armourtype': 'robes'}
  
  #Black Mage
-black_mage = {'name': 'Black Mage','description': 'Elemental Damage Dealer', 'hp':5 , 'mp':10 ,'spelllist': {
+black_mage = {'name': 'black Mage','description': 'Elemental Damage Dealer', 'hp':5 , 'mp':10 ,'spelllist': {
 'thunder': {'name': 'Thunder','level': 1, 'effect': 'damage','amount':5, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerInteligence','element': 'darksday'},
 'fire': {'name': 'Fire','level': 1, 'effect': 'damage','amount':10, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerInteligence','element': 'firesday'},
 'Gust': {'name': 'Wind','level': 4, 'effect': 'damage','amount':12, 'mp_cost': 8, 'cast_time': 3,'modifier':'playerInteligence','element': 'windsday'}}, 
 'armourtype': 'robes'}
 
 #RED MAGE
-red_mage = {'name': 'Red Mage','description': 'Enfeebler','hp':15 ,'mp':0 ,'spelllist': {
+red_mage = {'name': 'red Mage','description': 'Enfeebler','hp':15 ,'mp':0 ,'spelllist': {
 'rage': {'name': 'Rage','level': 1, 'effect': 'damage','amount':10, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerStrength','element': 'Darksday'}},
 'abilities': {'coax':{'level': 1, 'effect': 'Damage x2, Defense halved', 'tp_cost': 100, 'cast_time':3,'modifier':'playerStrength'}},
 'armourtype': 'Heavy Armour'}
 
 #Warrior
-warrior = {'name': 'Warrior','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
+warrior = {'name': 'warrior','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
 'rage': {'name': 'Rage','level': 1, 'effect': 'damage','amount':10, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerStrength','element': 'Darksday'}},
 'abilities': {'coax':{'level': 1, 'effect': 'Damage x2, Defense halved', 'tp_cost': 100, 'cast_time':3,'modifier':'playerStrength'}},
 'armourtype': 'Heavy Armour'}
 
 #THIEF
-thief = {'name': 'Warrior','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
+thief = {'name': 'thief','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
 'rage': {'name': 'Rage','level': 1, 'effect': 'damage','amount':10, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerStrength','element': 'Darksday'}},
 'abilities': {'coax':{'level': 1, 'effect': 'Damage x2, Defense halved', 'tp_cost': 100, 'cast_time':3,'modifier':'playerStrength'}},
 'armourtype': 'Heavy Armour'}
 
 #MONK
-monk = {'name': 'Warrior','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
+monk = {'name': 'monk','description': 'Tank','hp':15 ,'mp':0 ,'spelllist': {
 'rage': {'name': 'Rage','level': 1, 'effect': 'damage','amount':10, 'mp_cost': 6, 'cast_time': 3,'modifier':'playerStrength','element': 'Darksday'}},
 'abilities': {'coax':{'level': 1, 'effect': 'Damage x2, Defense halved', 'tp_cost': 100, 'cast_time':3,'modifier':'playerStrength'}},
 'armourtype': 'Heavy Armour'}

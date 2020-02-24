@@ -82,8 +82,10 @@ def NPC_items(race, job, level):
     return cur.fetchall() """
 
 #print(NPC_random_name(goblin, 'M'))
-print(NPC_weapons(goblin['race_name'],'warrior',3)) # works needs to not manually input
+print(NPC_weapons(goblin['race_name'],warrior['name'],3)) # works needs to not manually input
 y = Enemy(goblin,'M',goblin['race_name'],NPC_random_name(goblin, 'M'),6,warrior,monk,52,inventory = create_enemy(goblin['race_name'],'M',5,warrior["name"]))
 print("y is: ", y)
 print("y name is: ",y.name,y.sex,y.gold,y.mainjob["name"],y.supportjob["name"])
 print("y inventory is: ",y.inventory)
+z = Enemy(goblin,'F',goblin['race_name'],NPC_random_name(goblin,'F'),15,warrior,thief,23,create_enemy(goblin['race_name'],'F',15,warrior['name']))
+print(z.name)
