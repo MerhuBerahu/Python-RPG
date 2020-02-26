@@ -1,3 +1,9 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+MODULE FOR TESTING PURPOSES
+"""
+
 from characterCreation import *
 from beings import Enemy
 import random

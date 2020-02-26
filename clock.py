@@ -1,3 +1,11 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This module's Calculates the game worlds date/time.
+This is used during other functions, such as combat for 
+element enhancements, etc
+"""
+
 import time
 import random
 import sys

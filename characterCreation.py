@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This module's deals with Character creation. Selecting name, race, job classes
+"""
 
 from races import *
 from jobs import *

@@ -1,3 +1,10 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This module's deals with the Base being Class that players, NPC's
+and enemies inherit from
+"""
+
 import random
 from races import *
 from jobs import *

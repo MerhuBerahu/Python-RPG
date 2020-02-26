@@ -1,3 +1,9 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""This module's Calculates the Players inventory reading/writing 
+the data in from an SQLite3 database file.
+"""
+
 import sqlite3
 from items import items
 

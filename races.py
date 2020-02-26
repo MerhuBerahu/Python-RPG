@@ -1,3 +1,9 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Dictionaries of Races within the game
+"""
+
 import random
 '''TODO
 *ADD ALL RACES IN

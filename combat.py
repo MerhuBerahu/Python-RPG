@@ -1,3 +1,10 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This module's deals Combat. Reading in the character, checking 
+their stats and that of the enemy, then doing the combat math
+"""
+
 from characterCreation import *
 from beings import Enemy
 import random

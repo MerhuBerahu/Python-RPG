@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Dictionaries of the Job classes
+"""
 
 #job
 #spells

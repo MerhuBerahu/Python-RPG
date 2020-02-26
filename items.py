@@ -1,3 +1,10 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+DEPRECATED MODULE ITEMS WERE ORIGINALLY DICTIONARIES
+"""
+
+
 items = {
     "Bastard Sword": {
         "ID": 1,

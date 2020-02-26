@@ -1,3 +1,10 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+MODULE FOR TESTING PURPOSES
+"""
+
+
 import sqlite3
 from items import items
 
