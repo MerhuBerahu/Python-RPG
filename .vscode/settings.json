@@ -1,4 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\wmclaughlan\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "python.jediEnabled": false
+    "python.pythonPath": "C:\\Users\\wmcla\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft"
 }

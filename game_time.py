@@ -157,7 +157,7 @@ def getTime():
 
 
     timeNow = {'day':day,'date':date,'month':month,'yearcount':yearcount,'season':season,'hour':hour,'minute':minute}
-    #print(timeNow['day'])
+    print(timeNow['day'])
     return timeNow
 
 

@@ -116,6 +116,23 @@ def getTime():
         print("DefaultSeason")
         print(monthremainder)
 
+    ### -- CALC SUNRISE/SET -- ###
+    sunrise = None
+    sunset = None
+    if season == "Winter":
+        sunrise = 10
+        sunset = 16
+    elif season == "Spring":
+        sunrise = 8
+        sunset = 18
+    elif season == "Summer":
+        sunrise = 6
+        sunset = 22
+    elif season == "Autumn":
+        sunrise = 9
+        sunset = 17
+
+
 
     ### -- CALC MOON
     # new moon -> crescent moon -> half moon -> gibbous moon -> full moon
@@ -201,6 +218,8 @@ def getTime():
         print(day, " - ",date, " - " ,month, " - ", yearcount, " in the ", season, " time.", " It's: ",hour, ":",minute)
         print("Moon = ",moon)
         print(yellow + "Special day - " + white,special_day, )
+        print(f"Sunrise was at {sunrise}")
+        print(f"Sunset was at {sunset}")
         time.sleep(1/25)
         # for windows
         if name == 'nt':
